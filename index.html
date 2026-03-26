@@ -1,0 +1,454 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BurnoutGuard — Reclaim Your Energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+
+<nav id="navbar">
+  <a class="nav-logo" href="#">Burnout<span>Guard</span></a>
+  <ul class="nav-links">
+    <li><a href="#signs">Signs</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#breathe">Breathe</a></li>
+    <li><a href="#techniques">Techniques</a></li>
+    <li><a href="#tips">Tips</a></li>
+    <li><a href="#tracker">Tracker</a></li>
+  </ul>
+  <button class="nav-btn" onclick="document.getElementById('meter').scrollIntoView({behavior:'smooth'})">Check Your Level</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+  <div class="badge"><span class="dot"></span>Your Wellness Starts Here</div>
+  <h1>
+    <span style="display:block">Stop the</span>
+    <span class="outline" style="display:block;-webkit-text-stroke:1.5px var(--text);color:transparent">Burn<span style="-webkit-text-stroke:0;color:var(--accent)">out</span></span>
+    <span style="display:block;font-style:italic;font-size:.65em;color:var(--muted)">before it stops you</span>
+  </h1>
+  <p class="hero-sub">Recognize the warning signs, rebuild your energy, and create sustainable work habits with science-backed tools.</p>
+  <div class="hero-btns">
+    <button class="btn-p" onclick="document.getElementById('meter').scrollIntoView({behavior:'smooth'})">🔥 Test Your Burnout Level</button>
+    <button class="btn-s" onclick="document.getElementById('breathe').scrollIntoView({behavior:'smooth'})">💨 Start Breathing Exercise</button>
+  </div>
+  <div class="hero-imgs">
+    <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=600&q=80" alt="tired worker"/>
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="calm nature"/>
+    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="meditation"/>
+  </div>
+  <div class="stats-row">
+    <div class="stat-item"><div class="stat-num" data-target="77">0</div><div class="stat-lbl">% report burnout</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="3">0</div><div class="stat-lbl">x more sick days</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="63">0</div><div class="stat-lbl">% feel disengaged</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="89">0</div><div class="stat-lbl">% improved with habits</div></div>
+  </div>
+</section>
+
+<!-- SIGNS -->
+<section id="signs">
+  <div class="signs-layout reveal">
+    <div class="signs-img">
+      <img src="https://images.unsplash.com/photo-1495653797063-114787b77b23?w=700&q=80" alt="stressed worker"/>
+      <div class="img-badge">
+        <div class="img-badge-icon">⚠️</div>
+        <div class="img-badge-text"><strong>Early Warning</strong><span>Recognize before it's too late</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-tag">Warning Signs</div>
+      <h2 class="section-title">Are You Already on the Edge?</h2>
+      <p class="section-sub">Burnout creeps in silently. Here are the most common indicators you should never ignore.</p>
+      <div class="signs-list">
+        <div class="sign-card"><div class="sign-icon">😴</div><div class="sign-text"><strong>Chronic Exhaustion</strong><span>Feeling drained even after a full night's sleep</span></div></div>
+        <div class="sign-card"><div class="sign-icon">🧠</div><div class="sign-text"><strong>Mental Fog</strong><span>Difficulty concentrating or making simple decisions</span></div></div>
+        <div class="sign-card"><div class="sign-icon">😤</div><div class="sign-text"><strong>Increased Irritability</strong><span>Small things feel overwhelming and frustrating</span></div></div>
+        <div class="sign-card"><div class="sign-icon">💔</div><div class="sign-text"><strong>Lost Motivation</strong><span>Work that used to excite you feels pointless</span></div></div>
+        <div class="sign-card"><div class="sign-icon">🏃</div><div class="sign-text"><strong>Physical Symptoms</strong><span>Headaches, muscle tension, frequent illness</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <div class="tools-header reveal">
+    <div>
+      <div class="section-tag">Recovery Tools</div>
+      <h2 class="section-title">Your Burnout Toolkit</h2>
+    </div>
+    <p class="section-sub" style="max-width:340px">Science-backed strategies used by top performers worldwide.</p>
+  </div>
+  <div class="tools-grid reveal">
+    <div class="tool-card">
+      <img class="tool-card-img" src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&q=80" alt="meditation"/>
+      <div class="tool-card-body"><span class="tool-chip">Mental</span><h3>Mindfulness Meditation</h3><p>Just 10 minutes daily reduces cortisol by 23% and improves focus dramatically over 8 weeks.</p></div>
+    </div>
+    <div class="tool-card">
+      <img class="tool-card-img" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="exercise"/>
+      <div class="tool-card-body"><span class="tool-chip">Physical</span><h3>Movement & Exercise</h3><p>30 minutes of movement releases endorphins that counteract stress hormones built up from work.</p></div>
+    </div>
+    <div class="tool-card">
+      <img class="tool-card-img" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&q=80" alt="journaling"/>
+      <div class="tool-card-body"><span class="tool-chip">Cognitive</span><h3>Expressive Journaling</h3><p>Writing about stressors for 20 minutes rewires how your brain processes negative emotions.</p></div>
+    </div>
+    <div class="tool-card">
+      <img class="tool-card-img" src="https://images.unsplash.com/photo-1541199249251-f713e6145474?w=600&q=80" alt="social"/>
+      <div class="tool-card-body"><span class="tool-chip">Social</span><h3>Connection Rituals</h3><p>Regular meaningful social contact is the strongest single predictor of emotional resilience.</p></div>
+    </div>
+    <div class="tool-card">
+      <img class="tool-card-img" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600&q=80" alt="reading"/>
+      <div class="tool-card-body"><span class="tool-chip">Recovery</span><h3>Deep Rest Protocols</h3><p>Non-sleep deep rest (NSDR) restores dopamine and accelerates mental recovery in 20 minutes.</p></div>
+    </div>
+    <div class="tool-card">
+      <img class="tool-card-img" src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=600&q=80" alt="nature"/>
+      <div class="tool-card-body"><span class="tool-chip">Environment</span><h3>Nature Exposure</h3><p>Spending 20 minutes in nature reduces stress hormones more effectively than urban environments.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BURNOUT METER -->
+<section id="meter">
+  <div class="meter-layout reveal">
+    <div>
+      <div class="section-tag">Self-Assessment</div>
+      <h2 class="section-title">Measure Your Burnout Level</h2>
+      <p class="section-sub">Answer honestly — this takes 60 seconds and gives you a personalized recovery plan.</p>
+      <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=600&q=80" alt="assessment" style="width:100%;border-radius:20px;height:260px;object-fit:cover;margin-top:2rem;display:block;"/>
+    </div>
+    <div>
+      <div class="quiz-box">
+        <h3>Burnout Meter</h3>
+        <p>Rate each from 1 (Never) to 10 (Always)</p>
+        <div class="q-item">
+          <label>I feel emotionally drained at work</label>
+          <input type="range" class="q-slider" id="q1" min="1" max="10" value="5"/>
+          <div class="slider-labels"><span>Never</span><span id="q1v">5</span><span>Always</span></div>
+        </div>
+        <div class="q-item">
+          <label>My work feels meaningless or pointless</label>
+          <input type="range" class="q-slider" id="q2" min="1" max="10" value="5"/>
+          <div class="slider-labels"><span>Never</span><span id="q2v">5</span><span>Always</span></div>
+        </div>
+        <div class="q-item">
+          <label>I struggle to concentrate on tasks</label>
+          <input type="range" class="q-slider" id="q3" min="1" max="10" value="5"/>
+          <div class="slider-labels"><span>Never</span><span id="q3v">5</span><span>Always</span></div>
+        </div>
+        <div class="q-item">
+          <label>I feel irritable or cynical about work</label>
+          <input type="range" class="q-slider" id="q4" min="1" max="10" value="5"/>
+          <div class="slider-labels"><span>Never</span><span id="q4v">5</span><span>Always</span></div>
+        </div>
+        <div class="q-item">
+          <label>I wake up dreading the workday</label>
+          <input type="range" class="q-slider" id="q5" min="1" max="10" value="5"/>
+          <div class="slider-labels"><span>Never</span><span id="q5v">5</span><span>Always</span></div>
+        </div>
+        <button id="calc-btn">Calculate My Score →</button>
+      </div>
+      <div class="meter-result" id="result">
+        <div class="result-circle" id="result-circle">0%</div>
+        <div class="result-label" id="result-label">—</div>
+        <div class="result-advice" id="result-advice"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BREATHING -->
+<section id="breathe">
+  <div class="breathe-center reveal">
+    <div class="section-tag">Interactive Tool</div>
+    <h2 class="section-title">Guided Breathing Exercise</h2>
+    <p class="section-sub" style="margin:0 auto">Activate your parasympathetic nervous system in 3 minutes.</p>
+    <div class="breathe-ring" id="breatheRing">
+      <div class="breathe-ring-outer"></div>
+      <div class="breathe-ring-inner" id="breatheText">Press<br>Start</div>
+    </div>
+    <div class="breathe-phase" id="breathePhase">Choose a pattern below</div>
+    <div class="breathe-count" id="breatheCount">—</div>
+    <div class="breathe-controls">
+      <button class="b-btn" onclick="startBreathing()">▶ Start</button>
+      <button class="b-btn" onclick="stopBreathing()">■ Stop</button>
+      <button class="b-btn" id="pat478" onclick="setPattern(4,7,8,'4-7-8 Calm',this)">4-7-8 Calm</button>
+      <button class="b-btn" id="patBox" onclick="setPattern(4,4,4,'Box Breathing',this)">Box Breathing</button>
+      <button class="b-btn" id="pat36" onclick="setPattern(3,0,6,'3-6 Relax',this)">3-6 Relax</button>
+    </div>
+    <div class="breathe-cycles" id="breatheCycles">Cycles completed: 0</div>
+  </div>
+</section>
+
+<!-- TECHNIQUES -->
+<section id="techniques">
+  <div class="reveal">
+    <div class="section-tag">Recovery Methods</div>
+    <h2 class="section-title">Science-Backed Techniques</h2>
+  </div>
+  <div class="tech-grid reveal">
+    <div class="tech-card" style="--accent-color:var(--accent)">
+      <span class="tech-emoji">🍅</span>
+      <h3>Pomodoro Method</h3>
+      <p>Work in focused 25-min sprints with 5-min breaks. After 4 rounds, take a 30-min rest.</p>
+      <div class="tech-timer" id="pomodoroDisplay">25:00 ready</div>
+      <button class="b-btn" onclick="startPomodoro()" style="margin-top:.8rem;width:100%;border-radius:10px;" id="pomBtn">▶ Start Pomodoro</button>
+    </div>
+    <div class="tech-card" style="--accent-color:var(--accent2)">
+      <span class="tech-emoji">🌊</span>
+      <h3>Ultradian Rhythms</h3>
+      <p>Your brain cycles through 90-min performance peaks. Work with them, not against them.</p>
+      <div class="tech-timer">Work 90 min → Rest 20 min</div>
+    </div>
+    <div class="tech-card" style="--accent-color:var(--accent3)">
+      <span class="tech-emoji">📵</span>
+      <h3>Digital Detox Hours</h3>
+      <p>Designate 2 hours daily with zero screens. Your brain needs full offline recovery time.</p>
+      <div class="tech-timer">Recommended: 7–9 PM</div>
+    </div>
+    <div class="tech-card" style="--accent-color:#a78bfa">
+      <span class="tech-emoji">🧊</span>
+      <h3>Cold Exposure</h3>
+      <p>Brief cold showers release norepinephrine — a natural mood elevator with lasting effects.</p>
+      <div class="tech-timer">Start: 30 sec cold shower</div>
+    </div>
+    <div class="tech-card" style="--accent-color:var(--accent)">
+      <span class="tech-emoji">🌅</span>
+      <h3>Morning Sunlight</h3>
+      <p>10 minutes of morning sun sets your circadian rhythm and improves sleep quality by 50%.</p>
+      <div class="tech-timer">Best: Within 30 min of waking</div>
+    </div>
+    <div class="tech-card" style="--accent-color:var(--accent2)">
+      <span class="tech-emoji">✍️</span>
+      <h3>Gratitude Practice</h3>
+      <p>3 specific things daily trains your brain to notice positives, reducing stress reactivity.</p>
+      <div class="tech-timer">Takes only 5 minutes</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="reveal">
+    <div class="section-tag">Inspiration</div>
+    <h2 class="section-title">Find Your Recovery Space</h2>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="g-img tall">
+      <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=600&q=80" alt="forest"/>
+      <div class="g-overlay"><span>🌲 Forest Bathing</span></div>
+    </div>
+    <div class="g-img">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="mountains"/>
+      <div class="g-overlay"><span>⛰️ Mountain Air</span></div>
+    </div>
+    <div class="g-img">
+      <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="yoga"/>
+      <div class="g-overlay"><span>🧘 Yoga & Stretch</span></div>
+    </div>
+    <div class="g-img">
+      <img src="https://images.unsplash.com/photo-1510632974997-1afb80c96d4b?w=600&q=80" alt="beach"/>
+      <div class="g-overlay"><span>🌊 Ocean Therapy</span></div>
+    </div>
+    <div class="g-img tall">
+      <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600&q=80" alt="reading"/>
+      <div class="g-overlay"><span>📚 Slow Living</span></div>
+    </div>
+    <div class="g-img">
+      <img src="https://images.unsplash.com/photo-1489659831163-682b5af42225?w=600&q=80" alt="coffee"/>
+      <div class="g-overlay"><span>☕ Mindful Mornings</span></div>
+    </div>
+    <div class="g-img">
+      <img src="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=600&q=80" alt="hammock"/>
+      <div class="g-overlay"><span>🌿 Deep Rest</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS TABS -->
+<section id="tips">
+  <div class="reveal">
+    <div class="section-tag">Advice Library</div>
+    <h2 class="section-title">Recovery Tips by Category</h2>
+    <div class="tips-tabs" style="margin-top:1.5rem">
+      <button class="tab active" onclick="switchTab('work',this)">🏢 Work</button>
+      <button class="tab" onclick="switchTab('sleep',this)">😴 Sleep</button>
+      <button class="tab" onclick="switchTab('body',this)">💪 Body</button>
+      <button class="tab" onclick="switchTab('mind',this)">🧘 Mind</button>
+    </div>
+  </div>
+  <div id="tab-work" class="tips-content active">
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="office"/><div class="tip-card-body"><h4>Set Hard Stop Times</h4><p>Define a non-negotiable end time. Close your laptop, physically leave your workspace.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=500&q=80" alt="boundaries"/><div class="tip-card-body"><h4>Practice Saying No</h4><p>Every yes to something unimportant is a no to what matters. Protect your energy fiercely.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=500&q=80" alt="focus"/><div class="tip-card-body"><h4>Single-Tasking</h4><p>Multitasking reduces productivity by 40%. Focus on one thing until completion.</p></div></div>
+  </div>
+  <div id="tab-sleep" class="tips-content">
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=500&q=80" alt="sleep"/><div class="tip-card-body"><h4>Consistent Schedule</h4><p>Go to bed and wake at the same time daily — even weekends. Consistency is the key.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=500&q=80" alt="dark room"/><div class="tip-card-body"><h4>Dark & Cool Room</h4><p>Temperature of 65–68°F (18–20°C) and complete darkness optimize deep sleep quality.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=500&q=80" alt="no phone"/><div class="tip-card-body"><h4>No Screens Before Bed</h4><p>Blue light suppresses melatonin. Stop all screens 90 minutes before sleep time.</p></div></div>
+  </div>
+  <div id="tab-body" class="tips-content">
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&q=80" alt="gym"/><div class="tip-card-body"><h4>Zone 2 Cardio</h4><p>150 min/week of light cardio (still able to talk) transforms mitochondria and energy levels.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80" alt="food"/><div class="tip-card-body"><h4>Anti-Inflammatory Diet</h4><p>Reduce processed sugar and seed oils. Add omega-3s, leafy greens, and fermented foods.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="stretch"/><div class="tip-card-body"><h4>Daily Stretching</h4><p>10 minutes of full-body stretching reduces cortisol and strengthens body-mind connection.</p></div></div>
+  </div>
+  <div id="tab-mind" class="tips-content">
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=500&q=80" alt="meditate"/><div class="tip-card-body"><h4>Daily Meditation</h4><p>Even 5 minutes of breath focus rewires stress pathways in the prefrontal cortex.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500&q=80" alt="journal"/><div class="tip-card-body"><h4>Evening Journaling</h4><p>Write 3 wins and 1 lesson every night. This reframes your day positively before sleep.</p></div></div>
+    <div class="tip-card"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&q=80" alt="book"/><div class="tip-card-body"><h4>Read Fiction</h4><p>Reading fiction increases empathy and provides cognitive escape that screens cannot replicate.</p></div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal">
+    <div class="section-tag">Real Stories</div>
+    <h2 class="section-title">People Who Recovered</h2>
+  </div>
+  <div class="testi-grid reveal">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">I was completely done — barely could get out of bed. The breathing exercises and sleep routine literally saved my career. Three months in, I feel like myself again.</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&q=80" alt="Sarah"/>
+        <div class="testi-name"><strong>Sarah K.</strong><span>Marketing Director, NY</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">The burnout meter opened my eyes. I scored 82% and had no clue how bad it was. The Pomodoro timer alone increased my output 40% with half the stress.</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James"/>
+        <div class="testi-name"><strong>James T.</strong><span>Software Engineer, Berlin</span></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★☆</div>
+      <p class="testi-text">I used to work 16 hours and called it dedication. Now I know it was self-destruction. The habit tracker keeps me accountable to my recovery every single day.</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Mia"/>
+        <div class="testi-name"><strong>Mia L.</strong><span>Startup Founder, London</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACKER -->
+<section id="tracker">
+  <div class="reveal">
+    <div class="section-tag">Daily Habits</div>
+    <h2 class="section-title">Track Your Recovery</h2>
+  </div>
+  <div class="tracker-layout reveal">
+    <div class="tracker-box">
+      <h3>Recovery Habits</h3>
+      <div class="habit-row">
+        <div class="habit-emoji">😴</div>
+        <div class="habit-info"><strong>Sleep 8 hours</strong><div class="progress-bar"><div class="progress-fill" style="background:var(--accent3)" data-width="85"></div></div></div>
+        <div class="habit-pct">85%</div>
+      </div>
+      <div class="habit-row">
+        <div class="habit-emoji">🧘</div>
+        <div class="habit-info"><strong>Meditate 10 min</strong><div class="progress-bar"><div class="progress-fill" style="background:var(--accent2)" data-width="60"></div></div></div>
+        <div class="habit-pct">60%</div>
+      </div>
+      <div class="habit-row">
+        <div class="habit-emoji">🏃</div>
+        <div class="habit-info"><strong>Exercise 30 min</strong><div class="progress-bar"><div class="progress-fill" style="background:var(--accent)" data-width="70"></div></div></div>
+        <div class="habit-pct">70%</div>
+      </div>
+      <div class="habit-row">
+        <div class="habit-emoji">📵</div>
+        <div class="habit-info"><strong>Digital detox</strong><div class="progress-bar"><div class="progress-fill" style="background:#a78bfa" data-width="45"></div></div></div>
+        <div class="habit-pct">45%</div>
+      </div>
+      <div class="habit-row">
+        <div class="habit-emoji">🌅</div>
+        <div class="habit-info"><strong>Morning sunlight</strong><div class="progress-bar"><div class="progress-fill" style="background:var(--accent2)" data-width="90"></div></div></div>
+        <div class="habit-pct">90%</div>
+      </div>
+    </div>
+    <div class="tracker-box">
+      <h3>March 2026 — Check-ins</h3>
+      <div class="week-days">
+        <div class="week-day-lbl">M</div><div class="week-day-lbl">T</div><div class="week-day-lbl">W</div>
+        <div class="week-day-lbl">T</div><div class="week-day-lbl">F</div><div class="week-day-lbl">S</div><div class="week-day-lbl">S</div>
+      </div>
+      <div class="week-grid" id="monthGrid"></div>
+      <div style="margin-top:2rem;padding:1.2rem;background:rgba(0,217,160,.08);border-radius:14px;border:1px solid rgba(0,217,160,.2)">
+        <div style="font-size:.8rem;color:var(--muted);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em">Current Streak</div>
+        <div style="font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--accent3);line-height:1">7 <span style="font-size:1rem;color:var(--muted)">days 🔥</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="news-box reveal">
+    <div class="section-tag">Stay Balanced</div>
+    <h2>Weekly Recovery Insights</h2>
+    <p>Science-backed tips and motivation delivered every Monday morning.</p>
+    <div class="news-form">
+      <input class="news-input" type="email" placeholder="Enter your email address" id="emailInput"/>
+      <button class="news-submit" onclick="handleSubscribe(this)">Join Free →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo" style="font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:900;color:var(--accent)">Burnout<span style="color:var(--text)">Guard</span></div>
+      <p>A wellness platform helping people recognize, prevent, and recover from professional burnout through science-backed tools.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="#signs">Warning Signs</a></li>
+        <li><a href="#tools">Recovery Tools</a></li>
+        <li><a href="#techniques">Techniques</a></li>
+        <li><a href="#tips">Tip Library</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="#meter">Burnout Meter</a></li>
+        <li><a href="#breathe">Breathwork</a></li>
+        <li><a href="#tracker">Habit Tracker</a></li>
+        <li><a href="#gallery">Inspiration</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 BurnoutGuard. All rights reserved. Take care of yourself. 💛</p>
+    <div class="socials">
+      <a class="social-btn" href="#">𝕏</a>
+      <a class="social-btn" href="#">in</a>
+      <a class="social-btn" href="#">ig</a>
+      <a class="social-btn" href="#">yt</a>
+    </div>
+  </div>
+<script src="./main.js"></script>
+</body>
+</html> 
